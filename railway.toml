@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+startCommand = "python black.py"
+restartPolicyMaxRetries = 5
+restartPolicyWindowSeconds = 600
